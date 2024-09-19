@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+
+    <fieldset>
+        <div>
+        <input type="text" id="primeiroNumero" placeholder="Digite um numero">
+        <select name="operacao" id="operacao">
+            <option id="soma" value="soma">Soma</option>
+            <option id="subtracao" value="subtracao">Subtração</option>
+            <option id="multiplicacao" value="multiplicacao">Multiplicação</option>
+            <option id="divisao" value="divisao">Divisão</option>
+            <option id="potencia" value="potencia">Potência</option>
+            <option id="raiz" value="raiz">Raiz</option>
+        </select>
+        <input type="text" id="segundoNumero" placeholder="Digite um numero">
+        </div>
+        <div>
+        <button id="confirmar">Confirmar</button>
+        </div>
+        <div>
+            Resultado: <span id="resultado"></span>
+        </div>
+        
+    </fieldset>
+    <script src="atividadeScript.js"></script>
+    
+</body>
+</html>
