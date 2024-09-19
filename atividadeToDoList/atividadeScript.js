@@ -5,10 +5,20 @@ const confirmar = document.getElementById("confirmar")
 const resultado = document.getElementById("resultado")
 
 confirmar.addEventListener("click", ()=>{
-    const num1 = Number(input1.value)
-    const num2 = Number(input2.value)
-    const op = operacao.value
     let res = 0
+    
+    const num1 = Number(input1.value.trim())
+    const num2 = Number(input2.value.trim())
+    if(isNaN(num1) || isNaN(num2) || input1.value.trim()==='' || input2.value.trim()===''){
+        res = "Digite um número válido!"
+        resultado.textContent = res
+        input1.value = ""
+        input2.value = ""
+        return
+    }
+    const op = operacao.value
+    
+
     switch (op) {
         case "soma":
             res = num1 + num2
@@ -42,4 +52,6 @@ confirmar.addEventListener("click", ()=>{
             break;
         }
     resultado.textContent = res
+    input1.value = ''
+    input2.value = ''
 })
