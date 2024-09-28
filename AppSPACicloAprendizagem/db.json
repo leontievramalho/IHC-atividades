@@ -1,0 +1,29 @@
+{
+  "learningCycles": [
+    {
+      "id": "78f2",
+      "topic": "Python",
+      "completed": false,
+      "review": false,
+      "goals": [
+        {
+          "text": "estudar com rene",
+          "id": "1727503227352",
+          "completed": false
+        },
+        {
+          "text": "oi",
+          "id": "1727503905350",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "8280",
+      "topic": "Matemática",
+      "completed": false,
+      "review": false,
+      "goals": []
+    }
+  ]
+}
